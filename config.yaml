@@ -1,0 +1,11 @@
+---
+name: bugisme
+version: 2
+
+libraries:
+- name: django
+  version: "1.5"
+
+handlers:
+- url: /static/
+  static_path: static

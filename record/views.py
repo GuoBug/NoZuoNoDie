@@ -9,6 +9,6 @@ def Contact(request):
 	return render_to_response('aboutMe.html')
 
 def HomePage(request):
-	allBlog = Blog.objects.all()
-	print type(allBlog)
+	allBlog = Blog.objects.all().values()
+	print allBlog
 	return render_to_response('home.html',{'bloginfo': allBlog})

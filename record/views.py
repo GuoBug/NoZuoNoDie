@@ -10,4 +10,5 @@ def Contact(request):
 
 def HomePage(request):
 	blog = Blog.create("new one")
+	blog.save()
 	return render_to_response('aboutMe.html')

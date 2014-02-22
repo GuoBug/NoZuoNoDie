@@ -7,11 +7,9 @@
 					<!-- head 应该到这里 -->
 					<div class="inner cover">
 						<div class="col-sm-8 blog-main">
-							{% for bloginfo %}
 							<h2 class="blog-post-title"> {{bloginfo.title}}</h2>
 							<p class="blog-post-meta">{{bloginfo.date}} 分类:<a href="#">{{bloginfo.category}}</a></p>
 							<p>{{bloginfo.context}}</p>
-							{% endfor %}
 						</div>
 					</div>
 

@@ -71,7 +71,7 @@ STATIC_ROOT = '/home/zhanggggfd/NoZuoNoDie/static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = 'http://guoqiang.us1.rpvhost.net/'
+STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (

@@ -6,14 +6,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 from os import environ
 
-import sae.const 
-MYSQL_DB = sae.const.MYSQL_DB 
-MYSQL_USER = sae.const.MYSQL_USER 
-MYSQL_PASS = sae.const.MYSQL_PASS 
-MYSQL_HOST_M = sae.const.MYSQL_HOST 
-MYSQL_HOST_S = sae.const.MYSQL_HOST_S 
-MYSQL_PORT = sae.const.MYSQL_PORT
-
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -26,12 +18,12 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': MYSQL_DB,                      # Or path to database file if using sqlite3.
+        'NAME': 'zhanggggfd_one',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': MYSQL_USER,
-        'PASSWORD': MYSQL_PASS,
-        'HOST': MYSQL_HOST_M,                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': MYSQL_PORT,                      # Set to empty string for default.
+        'USER': 'zhanggggfd',
+        'PASSWORD': 'gq830016',
+        'HOST': '172.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '',                      # Set to empty string for default.
     }
 }
 
@@ -79,7 +71,7 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = 'http://bugisme.sinaapp.com/static/'
+STATIC_URL = '/home/zhanggggfd/NoZuoNoDie/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -125,7 +117,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths. 
-    './templates/'
+    '/home/zhanggggfd/NoZuoNoDie/templates/'
 )
 
 INSTALLED_APPS = (

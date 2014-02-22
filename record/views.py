@@ -9,5 +9,5 @@ def Contact(request):
 	return render_to_response('aboutMe.html')
 
 def HomePage(request):
-	allBlog = Blog.objects.all()
+	allBlog = Blog.objects.get(title__contains='里程碑')
 	return render_to_response('home.html',{'bloginfo': allBlog})

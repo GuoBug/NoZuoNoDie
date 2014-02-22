@@ -7,9 +7,11 @@
 					<!-- head 应该到这里 -->
 					<div class="inner cover">
 						<div class="col-sm-8 blog-main">
-							<h1 class="cover-heading"> ~~~欢迎 σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ 欢迎~~~</h1>
-							<p class="lead">既然来了就转转吧.这里就是Up 主自己挖的坑！不知道什么时候能填满。</p>
-							<p class="lead">要更多联系方式 这边请 (」・ω・)」うー！(／・ω・)／にゃー！</p>
+							{% for bloginfo in allblog %}
+							<h2 class="blog-post-title"> {{bloginfo.title}}</h2>
+							<p class="blog-post-meta">{{bloginfo.date}} 分类:<a href="#">{{bloginfo.category}}</a></p>
+							<p>{{bloginfo.context}}</p>
+							{% endfor %}
 						</div>
 					</div>
 

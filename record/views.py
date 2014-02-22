@@ -9,6 +9,6 @@ def Contact(request):
 	return render_to_response('aboutMe.html')
 
 def HomePage(request):
-	blog = Blog.create("new one")
+	blog = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')
 	blog.save()
 	return render_to_response('aboutMe.html')

@@ -10,7 +10,7 @@
 							{% for bloginfo in allblog %}
 							<h2 class="blog-post-title"> {{bloginfo.title}}</h2>
 							<p class="blog-post-meta">{{bloginfo.date}} 分类:<a href="#">{{bloginfo.category}}</a></p>
-							<p>{{bloginfo.context}}</p>
+							<p>{{bloginfo.context|safe}}</p>
 							{% endfor %}
 						</div>
 					</div>

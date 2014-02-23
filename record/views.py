@@ -10,5 +10,5 @@ def Contact(request):
 
 def HomePage(request):
 	allBlog = Blog.objects.values('title','date','context','category')
-	print allBlog['title']
+	print type(allBlog)
 	return render_to_response('home.html',{'bloginfo': allBlog})

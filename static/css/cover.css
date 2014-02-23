@@ -45,7 +45,8 @@ body {
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
+  padding-top: 20px;
+  /* vertical-align: top; */
 }
 .cover-container {
   margin-right: auto;

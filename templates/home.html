@@ -1,10 +1,11 @@
 {% include 'head.t.html' %}
 	<body>
 		<div class="site-wrapper">
+			<div class="site-wrapper-inner">
 				<div class="cover-container">
 				{% include 'navbar.t.html' %}
 					<!-- head 应该到这里 -->
-					<div class="row">
+					<div class="inner cover">
 						<div class="col-sm-8 blog-main">
 							{% for bloginfo in allblog %}
 							<h2 class="blog-post-title"> {{bloginfo.title}}
@@ -16,13 +17,13 @@
 						</div>
 					</div>
 
-					<div class="mastfoot">
-						<div class="inner">
+					<div class="blog-footer">
 						<p>喜欢折腾的 <a href="https://github.com/GuoBug">Guo·Bug</a>, by <a href="https://twitter.com/GuoBug_Boy">@GuoBug_Boy</a>.</p>
-						</div>
 					</div>
 
 				</div>
+
+			</div>
 
 		</div>
 

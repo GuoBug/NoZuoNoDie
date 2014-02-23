@@ -164,3 +164,30 @@ body {
     width: 1170px;
   }
 }
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+.blog-footer {
+  padding: 4px 0;
+  color: #999;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+

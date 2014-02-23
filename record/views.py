@@ -9,6 +9,6 @@ def Contact(request):
 	return render_to_response('aboutMe.html')
 
 def HomePage(request):
-	allBlog = Blog.objects.values_list()
-	print type(allBlog.query)
+	allBlog = Blog.objects.values('title','date','context','category')
+	print allBlog
 	return render_to_response('home.html',{'bloginfo': allBlog})

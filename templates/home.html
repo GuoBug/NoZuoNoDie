@@ -6,11 +6,13 @@
 			<div class="row">
 				<div class="col-sm-8 blog-main">
 					{% for bloginfo in allblog %}
-					<h2 class="blog-post-title"> {{bloginfo.title}}
-					<small class="title-right">{{bloginfo.date}} 分类:<a href="#">{{bloginfo.category}}</a></small>
-					</h2>
-					<p>{{bloginfo.context|safe}}</p>
-					<hr class="featurette-divider">
+					<div class="blog-post">
+						<h2 class="blog-post-title"> {{bloginfo.title}}
+						<small class="title-right blog-post-meta">{{bloginfo.date}} 分类:<a href="#">{{bloginfo.category}}</a></small>
+						</h2>
+						<p>{{bloginfo.context|safe}}</p>
+						<hr class="featurette-divider">
+					</div>
 					{% endfor %}
 				</div>
 			</div>

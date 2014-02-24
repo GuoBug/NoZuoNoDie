@@ -7,9 +7,9 @@
 				<div class="col-sm-8 blog-main">
 					{% for bloginfo in allblog %}
 					<div class="blog-post">
-						<h2 class="blog-post-title"> {{bloginfo.title}}
+						<h3 class="blog-post-title"> {{bloginfo.title}}
 						<small class="title-right blog-post-meta">{{bloginfo.date}} 分类:<a href="#">{{bloginfo.category}}</a></small>
-						</h2>
+						</h3>
 						<p>{{bloginfo.context|safe}}</p>
 						<hr class="featurette-divider">
 					</div>
